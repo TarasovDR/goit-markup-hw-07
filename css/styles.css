@@ -182,16 +182,16 @@ body {
 .site-nav .link:focus,
 .auth-nav__link:hover,
 .auth-nav__link:focus,
-.footer__auth-nav a:hover,
-.footer__auth-nav a:focus,
+.address__link:hover,
+.address__link:focus,
 .list .current {
   color: var(--accent-color);
 }
 
 .auth-nav__link,
-.features-subtitle,
+.features__subtitle,
 .project-subtitle,
-.teammate-profession {
+.team-list__item-prof {
   color: var(--secondary-text-color);
 }
 
@@ -236,7 +236,7 @@ footer {
 
 .hero__title,
 .footer__logo,
-.footer__auth-nav .address {
+.address__link:first-child {
   color: var(--primary-bg-color);
 
   transition-property: color;
@@ -253,7 +253,7 @@ footer {
   text-transform: uppercase;
 }
 
-.section-title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -316,7 +316,7 @@ footer {
   transition-timing-function: var(--timing-function);
 }
 
-.feature-icon-bg {
+.feature__icon-bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,19 +326,19 @@ footer {
   background-color: var(--third-bg-color);
 }
 
-.feature-icon {
+.feature__icon {
   width: 70px;
   height: 70px;
 }
 
-.features-title {
+.features__title {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.features-subtitle {
+.features__subtitle {
   font-weight: 400;
   line-height: 1.715;
 }
@@ -347,27 +347,27 @@ footer {
   display: flex;
 }
 
-.features-list-item {
+.features-list__item {
   min-width: 270px;
 }
 
-.features-list-item:not(:last-child) {
+.features-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-list {
+.works-list {
   display: flex;
 }
 
-.work-list-item:not(:last-child) {
+.works-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-list-item-wrap {
+.works-list__item-wrap {
   position: relative;
 }
 
-.work-list-item-desc {
+.works-list__item-desc {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -389,45 +389,45 @@ footer {
   display: flex;
 }
 
-.teammate {
+.team-list__item {
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.teammate:not(:last-child) {
+.team-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.teammate-wrapper {
+.team-list__item-desc {
   padding: 30px;
 }
 
-.teammate-name {
+.team-list__item-name {
   margin-bottom: 10px;
 }
 
-.teammate-name,
-.teammate-profession {
+.team-list__item-name,
+.team-list__item-prof {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
 }
 
-.teammate-profession {
+.team-list__item-prof {
   font-weight: 400;
   margin-bottom: 16px;
 }
 
-.socials {
+.social {
   display: flex;
   justify-content: space-around;
 }
 
-.social-link,
-.footer-social-link {
+.social__link,
+.footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,17 +441,17 @@ footer {
   transition-timing-function: var(--timing-function);
 }
 
-.social-link:hover,
-.social-link:focus,
-.footer-social-link:hover,
-.footer-social-link:focus {
+.social__link:hover,
+.social__link:focus,
+.footer-social__link:hover,
+.footer-social__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   cursor: pointer;
 }
 
-.social-icon,
-.client-icon {
+.social__icon,
+.client__icon {
   fill: currentColor;
 }
 
@@ -460,7 +460,7 @@ footer {
   justify-content: space-between;
 }
 
-.client-link {
+.client-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,8 +475,8 @@ footer {
   transition-timing-function: var(--timing-function);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-list__link:hover,
+.client-list__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -501,12 +501,12 @@ address {
   text-transform: uppercase;
 }
 
-.footer-social {
+.footer__social {
   width: 206px;
   margin-right: 93px;
 }
 
-.footer-social-link {
+.footer-social__link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-bg-color);
 
@@ -540,7 +540,7 @@ address {
   border: 1px solid var(--accent-color);
 }
 
-.footer-social-icon {
+.footer-social__icon {
   fill: currentColor;
 }
 
@@ -635,11 +635,11 @@ address {
   line-height: 1.875;
 }
 
-.auth-nav-footer .footer-contact {
+.footer-contact {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.auth-nav-footer .item:not(last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
