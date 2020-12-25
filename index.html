@@ -18,25 +18,31 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav-wrapper">
-          <a href="./index.html" lang="en" class="logo">
-            <span class="logo-web">Web</span>Studio</a
+        <nav class="header__nav">
+          <a href="./index.html" lang="en" class="logo header__logo">
+            <span class="logo-accent">Web</span>Studio</a
           >
 
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="site-nav__item">
-              <a href="./index.html" class="link current">Студия</a>
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--active"
+                >Студия</a
+              >
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
-            <li class="site-nav__item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
-        <ul class="auth-nav list">
+        <ul class="auth-nav">
           <li class="auth-nav__item">
-            <a href="mailto:info@devstudio.com" class="auth-nav-link">
+            <a href="mailto:info@devstudio.com" class="auth-nav__link">
               <svg
                 width="16"
                 height="12"
@@ -48,8 +54,8 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="auth-nav__itemitem">
-            <a href="tel:+380961111111" class="auth-nav-link"
+          <li class="auth-nav__item">
+            <a href="tel:+380961111111" class="auth-nav__link"
               ><svg
                 width="10"
                 height="16"
@@ -68,18 +74,18 @@
     <main>
       <section class="section hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="btn current" data-modal-open>Заказать услугу</button>
+          <button class="btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
       <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
-          <ul class="list features-list">
+          <ul class="features-list">
             <li class="features-list-item">
               <div class="feature-icon-bg">
                 <svg
@@ -155,7 +161,7 @@
       <section class="section works">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list work-list">
+          <ul class="work-list">
             <li class="work-list-item">
               <div class="work-list-item-wrap">
                 <img
@@ -202,7 +208,7 @@
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list team-list">
+          <ul class="team-list">
             <li class="teammate">
               <img
                 src="./images/photo-1.jpg"
@@ -214,7 +220,7 @@
               <div class="teammate-wrapper">
                 <h3 class="teammate-name">Игорь Демьяненко</h3>
                 <p class="teammate-profession">Product Designer</p>
-                <ul class="list socials">
+                <ul class="socials">
                   <li class="social-item">
                     <a href="" class="social-link">
                       <svg
@@ -277,7 +283,7 @@
               <div class="teammate-wrapper">
                 <h3 class="teammate-name">Ольга Репина</h3>
                 <p class="teammate-profession">Frontend Developer</p>
-                <ul class="list socials">
+                <ul class="socials">
                   <li class="social-item">
                     <a href="" class="social-link">
                       <svg
@@ -340,7 +346,7 @@
               <div class="teammate-wrapper">
                 <h3 class="teammate-name">Николай Тарасов</h3>
                 <p class="teammate-profession">Marketing</p>
-                <ul class="list socials">
+                <ul class="socials">
                   <li class="social-item">
                     <a href="" class="social-link">
                       <svg
@@ -403,7 +409,7 @@
               <div class="teammate-wrapper">
                 <h3 class="teammate-name">Михаил Ермаков</h3>
                 <p class="teammate-profession">UI Designer</p>
-                <ul class="list socials">
+                <ul class="socials">
                   <li class="social-item">
                     <a href="" class="social-link">
                       <svg
@@ -462,7 +468,7 @@
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list clients-list">
+          <ul class="clients-list">
             <li class="client-item">
               <a href="" class="client-link">
                 <svg
@@ -545,12 +551,12 @@
     <footer class="footer">
       <div class="container footer-wrap">
         <div class="footer-address">
-          <a href="./index.html" class="logo logo-footer"
-            ><span class="logo-web">Web</span>Studio</a
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="logo-accent">Web</span>Studio</a
           >
 
           <address>
-            <ul class="auth-nav-footer list">
+            <ul class="footer__auth-nav">
               <li class="item">
                 <a
                   href="https://goo.gl/maps/oSqtVdrNRLuUKtEEA"
@@ -575,7 +581,7 @@
 
         <div class="footer-social">
           <b class="footer-social-title">присоединяйтесь</b>
-          <ul class="list socials">
+          <ul class="socials">
             <li class="social-item">
               <a href="" class="footer-social-link">
                 <svg
@@ -637,7 +643,7 @@
                 placeholder="E-mail"
                 class="subscribe-footer-input"
               />
-              <button type="submit" class="btn current subscribe-footer-btn">
+              <button type="submit" class="btn subscribe-footer-btn">
                 Подписаться
                 <svg
                   class="send-icon"
