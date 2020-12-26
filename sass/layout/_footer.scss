@@ -1,0 +1,123 @@
+footer {
+  background-color: var(--secondary-bg-color);
+}
+
+.footer__logo,
+.address__link:first-child {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.footer-social__link:hover,
+.footer-social__link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  cursor: pointer;
+}
+
+.container.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+address {
+  margin-right: 70px;
+  font-style: inherit;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.footer-social-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary-bg-color);
+  text-transform: uppercase;
+}
+
+.footer__social {
+  width: 206px;
+  margin-right: 93px;
+}
+
+.footer-social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-bg-color);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.subscribe-footer-form {
+  display: flex;
+}
+
+.subscribe-footer-input {
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--secondary-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.subscribe-footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-footer-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.footer-social__icon {
+  fill: currentColor;
+}
+
+.send-icon {
+  margin-left: 10px;
+  fill: var(--primary-bg-color);
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer__logo {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: var(--accent-color);
+}
