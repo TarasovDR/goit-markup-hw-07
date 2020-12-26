@@ -1,0 +1,69 @@
+.btn {
+  display: inline-block;
+  min-width: 73px;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.btn-filter {
+  text-decoration: none;
+  color: var(--primary-text-color);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.btn-filter {
+  padding: 6px 22px;
+  background-color: var(--third-bg-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+}
+
+.btn-filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-active {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.subscribe-footer-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+}
