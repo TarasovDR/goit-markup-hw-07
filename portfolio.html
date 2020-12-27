@@ -25,14 +25,14 @@
 
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--active"
+                >Студия</a
+              >
             </li>
             <li class="site-nav__item">
-              <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--active"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
@@ -72,7 +72,7 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section cards">
         <div class="container">
           <ul class="btn-filter__list">
             <li class="btn-filter__item">
@@ -96,8 +96,8 @@
 
           <h1 class="visually-hidden">Портфолио</h1>
 
-          <ul class="cards">
-            <li class="card">
+          <ul class="card-list">
+            <li class="card__item">
               <a href="" class="card-link">
                 <div class="card-img">
                   <img
@@ -294,7 +294,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-wrap">
+      <div class="container">
         <div class="footer__address">
           <a href="./index.html" class="logo footer__logo"
             ><span class="logo--accent">Web</span>Studio</a
@@ -380,27 +380,25 @@
 
         <div class="subscribe">
           <b class="social__title">подпишитесь на рассылку</b>
-          <div class="subscribe-footer-wrap">
-            <form class="subscribe-footer-form">
-              <input
-                type="text"
-                name="email"
-                placeholder="E-mail"
-                class="subscribe-footer-input"
-              />
-              <button type="submit" class="btn subscribe-footer-btn">
-                Подписаться
-                <svg
-                  class="send-icon"
-                  width="24"
-                  height="24"
-                  aria-label="subscribe-button"
-                >
-                  <use href="./icons/sprite.svg#send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+          <form class="subscribe__form">
+            <input
+              type="text"
+              name="email"
+              placeholder="E-mail"
+              class="subscribe__input"
+            />
+            <button type="submit" class="btn subscribe__btn">
+              Подписаться
+              <svg
+                class="send-icon"
+                width="24"
+                height="24"
+                aria-label="subscribe-button"
+              >
+                <use href="./icons/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

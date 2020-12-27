@@ -449,7 +449,7 @@ footer {
   fill: currentColor;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
