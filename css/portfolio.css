@@ -193,7 +193,7 @@ body {
   color: var(--accent-color);
 }
 
-.cards {
+.card__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,14 +203,14 @@ body {
   margin-left: -30px;
 }
 
-.card {
+.card__item {
   -ms-flex-preferred-size: calc((100% / 3 - 30px));
       flex-basis: calc((100% / 3 - 30px));
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.card .card-link {
+.card__link {
   display: block;
   -webkit-transition-property: opacity, -webkit-box-shadow, -webkit-transform;
   transition-property: opacity, -webkit-box-shadow, -webkit-transform;
@@ -222,18 +222,21 @@ body {
           transition-timing-function: var(--timing-function);
 }
 
-.card-link:hover,
-.card-link:focus {
+.card__link:hover .card__overlay,
+.card__link:focus .card__overlay {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
-.card-img {
+.card__img {
   position: relative;
   overflow: hidden;
 }
 
-.card-overlay {
+.card__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -259,14 +262,7 @@ body {
           transition-timing-function: var(--timing-function);
 }
 
-.card:hover .card-overlay,
-.card:focus .card-overlay {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.card-content {
+.card__content {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -542,5 +538,13 @@ body {
 
 .social__icon {
   fill: currentColor;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
 }
 /*# sourceMappingURL=portfolio.css.map */
