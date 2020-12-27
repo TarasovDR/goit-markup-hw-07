@@ -193,7 +193,7 @@ body {
   color: var(--accent-color);
 }
 
-.card-list {
+.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,10 +285,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
-}
-
-.project-subtitle {
-  color: var(--secondary-text-color);
 }
 
 .footer {
