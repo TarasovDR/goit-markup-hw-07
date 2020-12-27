@@ -22,23 +22,9 @@
   align-items: center;
 }
 
-.logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  color: #000000;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923;
-}
-
 .header__nav {
   display: flex;
   align-items: center;
-}
-
-.header__logo {
-  margin-right: 93px;
 }
 
 .header__icon {
@@ -97,7 +83,7 @@
 .auth-nav {
   margin-left: auto;
 }
-.logo-accent,
+
 .site-nav__link:hover,
 .site-nav__link:focus,
 .auth-nav__link:hover,

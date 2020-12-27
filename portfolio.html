@@ -20,7 +20,7 @@
       <div class="container">
         <nav class="header__nav">
           <a href="./index.html" lang="en" class="logo header__logo">
-            <span class="logo-accent">Web</span>Studio</a
+            <span class="logo--accent">Web</span>Studio</a
           >
 
           <ul class="site-nav">
@@ -46,7 +46,7 @@
               <svg
                 width="16"
                 height="12"
-                class="header-icon"
+                class="header__icon"
                 aria-label="envelope"
               >
                 <use href="./icons/sprite.svg#envelope"></use>
@@ -59,7 +59,7 @@
               ><svg
                 width="10"
                 height="16"
-                class="header-icon"
+                class="header__icon"
                 aria-label="smartphone"
               >
                 <use href="./icons/sprite.svg#smartphone"></use>
@@ -74,29 +74,29 @@
     <main>
       <section class="section">
         <div class="container">
-          <ul class="list btn-filter-list">
-            <li class="btn-filter-item">
-              <button type="buttonedfcsa" class="btn btn-filter btn-active">
+          <ul class="btn-filter__list">
+            <li class="btn-filter__item">
+              <button type="button" class="btn btn-filter btn--active">
                 Все
               </button>
             </li>
-            <li class="btn-filter-item">
+            <li class="btn-filter__item">
               <button type="button" class="btn btn-filter">Веб-сайты</button>
             </li>
-            <li class="btn-filter-item">
+            <li class="btn-filter__item">
               <button type="button" class="btn btn-filter">Приложения</button>
             </li>
-            <li class="btn-filter-item">
+            <li class="btn-filter__item">
               <button type="button" class="btn btn-filter">Дизайн</button>
             </li>
-            <li class="btn-filter-item">
+            <li class="btn-filter__item">
               <button type="button" class="btn btn-filter">Маркетинг</button>
             </li>
           </ul>
 
           <h1 class="visually-hidden">Портфолио</h1>
 
-          <ul class="list cards">
+          <ul class="cards">
             <li class="card">
               <a href="" class="card-link">
                 <div class="card-img">
@@ -296,27 +296,27 @@
     <footer class="footer">
       <div class="container footer-wrap">
         <div class="footer__address">
-          <a href="./index.html" class="logo logo-footer"
-            ><span class="logo-web">Web</span>Studio</a
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="logo--accent">Web</span>Studio</a
           >
 
-          <address>
-            <ul class="auth-nav-footer list">
-              <li class="item">
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
                 <a
                   href="https://goo.gl/maps/oSqtVdrNRLuUKtEEA"
-                  class="auth-nav address"
+                  class="address__link"
                 >
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="item">
-                <a href="mailto:info@example.com" class="footer-contact"
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="contact__link"
                   >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a href="tel:+380991111111" class="footer-contact"
+              <li class="address__item">
+                <a href="tel:+380991111111" class="contact__link"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -324,13 +324,13 @@
           </address>
         </div>
 
-        <div class="footer-social">
-          <b class="footer-social-title">присоединяйтесь</b>
-          <ul class="list social">
+        <div class="footer__social">
+          <b class="social__title">присоединяйтесь</b>
+          <ul class="social">
             <li class="social__item">
-              <a href="" class="footer-social__link">
+              <a href="" class="social__link">
                 <svg
-                  class="footer-social__icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                   aria-label="instagram"
@@ -340,9 +340,9 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="footer-social__link">
+              <a href="" class="social__link">
                 <svg
-                  class="footer-social__icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                   aria-label="twitter"
@@ -352,9 +352,9 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="footer-social__link">
+              <a href="" class="social__link">
                 <svg
-                  class="footer-social__icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                   aria-label="facebook"
@@ -364,9 +364,9 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="footer-social__link">
+              <a href="" class="social__link">
                 <svg
-                  class="footer-social__icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                   aria-label="linkedin"
@@ -379,7 +379,7 @@
         </div>
 
         <div class="subscribe">
-          <b class="footer-social-title">подпишитесь на рассылку</b>
+          <b class="social__title">подпишитесь на рассылку</b>
           <div class="subscribe-footer-wrap">
             <form class="subscribe-footer-form">
               <input
@@ -388,7 +388,7 @@
                 placeholder="E-mail"
                 class="subscribe-footer-input"
               />
-              <button type="submit" class="btn current subscribe-footer-btn">
+              <button type="submit" class="btn subscribe-footer-btn">
                 Подписаться
                 <svg
                   class="send-icon"

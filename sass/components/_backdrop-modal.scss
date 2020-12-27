@@ -10,19 +10,12 @@
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-}
 
-.backdrop.is-hidden {
-  transition-property: transform, opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -200%);
-  transition-property: transform, opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  &.is-hidden {
+    transition-property: transform, opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
 }
 
 .modal {
@@ -43,6 +36,13 @@
   transition-property: transform, opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -200%);
+    transition-property: transform, opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
 }
 
 .btn-close {
@@ -60,6 +60,11 @@
   outline: none;
 
   cursor: pointer;
+
+  &:hover .close-icon,
+  &:focus .close-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .close-icon {
@@ -69,18 +74,13 @@
   transition-timing-function: var(--timing-function);
 }
 
-.btn-close:hover .close-icon,
-.btn-close:focus .close-icon {
-  fill: var(--accent-color);
-}
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.modal-title {
+.modal__title {
   display: block;
   text-align: center;
   margin-bottom: 12px;

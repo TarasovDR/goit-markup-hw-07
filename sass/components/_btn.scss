@@ -14,9 +14,14 @@
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+
+  &--active {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+  }
 }
 
-.btn-filter-list {
+.btn-filter__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,29 +30,21 @@
 
 .btn-filter {
   text-decoration: none;
+  padding: 6px 22px;
   color: var(--primary-text-color);
+  background-color: var(--third-bg-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
 
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
 
-.btn-filter {
-  padding: 6px 22px;
-  background-color: var(--third-bg-color);
-  color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.625;
-  letter-spacing: 0.03em;
-}
-
-.btn-filter-item:not(:last-child) {
+.btn-filter__item:not(:last-child) {
   margin-right: 8px;
-}
-
-.btn-active {
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
 }
 
 .btn-filter:hover,
@@ -62,7 +59,7 @@
   transition-timing-function: var(--timing-function);
 }
 
-.subscribe-footer-btn {
+.subscribe__btn {
   display: flex;
   align-items: center;
   padding: 10px 28px;

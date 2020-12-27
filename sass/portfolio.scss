@@ -1,13 +1,14 @@
-@import "./base/common";
-@import "./base/container";
-
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+
+@import "./base/common";
+@import "./base/container";
 
 @import "./layout/header";
 @import "./layout/cards";
 @import "./layout/footer";
 
+@import "./components/logo";
 @import "./components/section";
 @import "./components/btn";
 @import "./components/social-links";

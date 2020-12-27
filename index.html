@@ -20,7 +20,7 @@
       <div class="container">
         <nav class="header__nav">
           <a href="./index.html" lang="en" class="logo header__logo">
-            <span class="logo-accent">Web</span>Studio</a
+            <span class="logo--accent">Web</span>Studio</a
           >
 
           <ul class="site-nav">
@@ -549,14 +549,14 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-wrap">
+      <div class="container">
         <div class="footer__address">
           <a href="./index.html" class="logo footer__logo"
-            ><span class="logo-accent">Web</span>Studio</a
+            ><span class="logo--accent">Web</span>Studio</a
           >
 
-          <address>
-            <ul class="address">
+          <address class="address">
+            <ul class="address__list">
               <li class="address__item">
                 <a
                   href="https://goo.gl/maps/oSqtVdrNRLuUKtEEA"
@@ -566,12 +566,12 @@
                 </a>
               </li>
               <li class="address__item">
-                <a href="mailto:info@example.com" class="footer-contact"
+                <a href="mailto:info@example.com" class="contact__link"
                   >info@example.com</a
                 >
               </li>
               <li class="address__item">
-                <a href="tel:+380991111111" class="footer-contact"
+                <a href="tel:+380991111111" class="contact__link"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -580,12 +580,12 @@
         </div>
 
         <div class="footer__social">
-          <b class="footer-social-title">присоединяйтесь</b>
+          <b class="social__title">присоединяйтесь</b>
           <ul class="social">
             <li class="social__item">
-              <a href="" class="footer-social__link">
+              <a href="" class="social__link">
                 <svg
-                  class="footer-social__icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                   aria-label="instagram"
@@ -595,9 +595,9 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="footer-social__link">
+              <a href="" class="social__link">
                 <svg
-                  class="footer-social__icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                   aria-label="twitter"
@@ -607,9 +607,9 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="footer-social__link">
+              <a href="" class="social__link">
                 <svg
-                  class="footer-social__icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                   aria-label="facebook"
@@ -619,9 +619,9 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="footer-social__link">
+              <a href="" class="social__link">
                 <svg
-                  class="footer-social__icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                   aria-label="linkedin"
@@ -634,28 +634,26 @@
         </div>
 
         <div class="subscribe">
-          <b class="footer-social-title">подпишитесь на рассылку</b>
-          <div class="subscribe-footer-wrap">
-            <form class="subscribe-footer-form">
-              <input
-                type="text"
-                name="email"
-                placeholder="E-mail"
-                class="subscribe-footer-input"
-              />
-              <button type="submit" class="btn subscribe-footer-btn">
-                Подписаться
-                <svg
-                  class="send-icon"
-                  width="24"
-                  height="24"
-                  aria-label="subscribe-button"
-                >
-                  <use href="./icons/sprite.svg#send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+          <b class="social__title">подпишитесь на рассылку</b>
+          <form class="subscribe__form">
+            <input
+              type="text"
+              name="email"
+              placeholder="E-mail"
+              class="subscribe__input"
+            />
+            <button type="submit" class="btn subscribe__btn">
+              Подписаться
+              <svg
+                class="send-icon"
+                width="24"
+                height="24"
+                aria-label="subscribe-button"
+              >
+                <use href="./icons/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -674,7 +672,7 @@
         </button>
 
         <div class="form-wrap">
-          <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+          <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
 
           <form class="modal__form">
             <label class="modal__form-field"
