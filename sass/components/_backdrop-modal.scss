@@ -48,8 +48,7 @@
     display: block;
     text-align: center;
     margin-bottom: 12px;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(20px, 900, 23px);
   }
 
   &__form {
@@ -61,18 +60,14 @@
     display: inline-block;
     margin-bottom: 10px;
     color: var(--secondary-text-color);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.167;
+    @include font(12px, 400, 14px);
     letter-spacing: 0.01em;
   }
 
   &__form-textarea {
     display: inline-block;
     color: var(--secondary-text-color);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.167;
+    @include font(12px, 400, 14px);
     letter-spacing: 0.01em;
   }
 
@@ -89,9 +84,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 42px;
     padding-right: 12px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.143;
+    @include font(14px, 400, 16px);
     letter-spacing: 0.01em;
 
     transition: border 250ms var(--timing-function);
@@ -124,9 +117,7 @@
     margin-bottom: 20px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.143;
+    @include font(14px, 400, 16px);
     letter-spacing: 0.01em;
 
     transition: border 250ms var(--timing-function);
@@ -142,9 +133,7 @@
     position: relative;
     padding-left: 36px;
     margin-bottom: 30px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    @include font(14px, 400, 24px);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 

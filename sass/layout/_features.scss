@@ -28,14 +28,12 @@
 
   &__title {
     margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 700;
+    @include font(14px, 700, 16px);
     text-transform: uppercase;
   }
 
   &__subtitle {
-    font-weight: 400;
-    line-height: 1.715;
+    @include font(14px, 400, 24px);
     color: var(--secondary-text-color);
   }
 }

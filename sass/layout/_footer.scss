@@ -20,8 +20,7 @@
 
 .address {
   font-style: inherit;
-  font-weight: 400;
-  line-height: 1.714;
+  @include font(14px, 400, 24px);
   letter-spacing: 0.03em;
 
   &__item:not(:last-child) {
@@ -65,8 +64,7 @@
     background-color: var(--secondary-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(16px, 400, 20px);
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
