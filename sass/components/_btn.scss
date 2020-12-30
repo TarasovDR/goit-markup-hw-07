@@ -1,11 +1,10 @@
 .btn {
-  display: inline-block;
   min-width: 73px;
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
-  background-color: var(--accent-color);
   color: var(--primary-bg-color);
+  background-color: var(--accent-color);
 
   font-family: inherit;
   @include font(16px, 700, 30px);
@@ -18,7 +17,6 @@
     padding: 6px 22px;
     color: var(--primary-text-color);
     background-color: var(--third-bg-color);
-    color: var(--primary-text-color);
 
     @include font(16px, 500, 26px);
     letter-spacing: 0.03em;

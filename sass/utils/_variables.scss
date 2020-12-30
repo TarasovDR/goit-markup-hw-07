@@ -8,10 +8,7 @@
   --third-bg-color: #f5f4fa;
   --icon-color: #afb1b8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-@mixin font($fs, $fw, $lh) {
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 }

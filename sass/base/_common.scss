@@ -43,7 +43,7 @@ body {
   padding-top: 80px;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   @include font(14px, 500, 16px);
   letter-spacing: 0.03em;
 }
